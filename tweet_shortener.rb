@@ -42,7 +42,7 @@ def bulk_tweet_shortener(tweets)
 end 
 
 def selective_tweet_shortener(tweet)
-  tweet.slice(0...140)
+  tweet[0..139]
 end 
 
 def shortened_tweet_truncator(tweet)
